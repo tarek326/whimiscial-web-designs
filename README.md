@@ -1,11 +1,11 @@
-# Whimiscial Web Designs
+# Whimsical Web Designs
 
-A responsive small-business website for Whimiscial Web Designs.
+A responsive small-business website for Whimsical Web Designs.
 
 Live site:
 
 ```text
-https://tarek326.github.io/whimiscial-web-designs/
+https://tarek326.github.io/whimsical-web-designs/
 ```
 
 ## Local Preview
