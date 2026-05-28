@@ -326,6 +326,13 @@ h3 {
   margin-bottom: 34px;
 }
 
+.section-copy {
+  max-width: 760px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -345,7 +352,7 @@ h3 {
 .package-card {
   display: grid;
   align-content: start;
-  min-height: 360px;
+  min-height: 520px;
   padding: 30px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -371,16 +378,21 @@ h3 {
 }
 
 .package-price {
-  margin: 4px 0 22px;
+  margin: 4px 0 8px;
   color: var(--navy);
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 900;
+}
+
+.package-summary {
+  margin-bottom: 22px;
+  color: var(--muted);
 }
 
 .package-list {
   display: grid;
   gap: 12px;
-  margin: 0;
+  margin: 0 0 24px;
   padding: 0;
   list-style: none;
   color: var(--muted);
@@ -400,6 +412,28 @@ h3 {
   height: 10px;
   border-radius: 50%;
   background: var(--gold);
+}
+
+.maintenance-price {
+  margin: auto 0 6px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  color: var(--teal);
+  font-size: 1.18rem;
+  font-weight: 900;
+}
+
+.maintenance-copy {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.package-footnote {
+  max-width: 860px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .portfolio-section {
