@@ -1,6 +1,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const contactForm = document.querySelector("#contact-form");
+const formNote = document.querySelector("#form-note");
 
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
@@ -37,6 +38,10 @@ if (contactForm) {
         message,
       ].join("\n")
     );
+
+    if (formNote) {
+      formNote.textContent = "Opening your email app with the project details filled in.";
+    }
 
     window.location.href = `mailto:tarekjacobs1@gmail.com?subject=${subject}&body=${body}`;
   });

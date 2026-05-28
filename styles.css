@@ -332,6 +332,76 @@ h3 {
   gap: 18px;
 }
 
+.packages-section {
+  background: var(--cloud);
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.package-card {
+  display: grid;
+  align-content: start;
+  min-height: 360px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 14px 42px rgba(17, 24, 39, 0.07);
+}
+
+.featured-package {
+  border-color: rgba(15, 143, 141, 0.45);
+  box-shadow: 0 24px 70px rgba(15, 143, 141, 0.16);
+}
+
+.package-label {
+  width: max-content;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #eaf7f6;
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.package-price {
+  margin: 4px 0 22px;
+  color: var(--navy);
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.package-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.package-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.package-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.56em;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
 .portfolio-section {
   background:
     linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
@@ -522,6 +592,33 @@ h3 {
   box-shadow: inset 0 0 0 4px #dff3f1;
 }
 
+.trust-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.trust-item {
+  min-height: 150px;
+  padding: 28px var(--page-x);
+  background: var(--paper);
+}
+
+.trust-item strong,
+.trust-item span {
+  display: block;
+}
+
+.trust-item strong {
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.trust-item span {
+  color: var(--muted);
+}
+
 .contact-section {
   background:
     radial-gradient(circle at 14% 20%, rgba(15, 143, 141, 0.18), transparent 28%),
@@ -601,6 +698,13 @@ h3 {
   cursor: pointer;
 }
 
+.form-note {
+  min-height: 1.4em;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.9rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -627,7 +731,9 @@ h3 {
 
 @media (max-width: 1180px) {
   .service-grid,
-  .portfolio-grid {
+  .portfolio-grid,
+  .package-grid,
+  .trust-section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -705,6 +811,8 @@ h3 {
   .intro-band,
   .service-grid,
   .portfolio-grid,
+  .package-grid,
+  .trust-section,
   .timeline {
     grid-template-columns: 1fr;
   }
@@ -770,9 +878,11 @@ h3 {
 
   .intro-band div,
   .service-card,
+  .package-card,
   .timeline div,
   .feature-panel,
-  .contact-card {
+  .contact-card,
+  .trust-item {
     padding: 24px 20px;
   }
 

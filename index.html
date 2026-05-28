@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Whimiscial Web Designs builds polished, responsive websites for small businesses."
+      content="Whimiscial Web Designs builds polished, responsive websites for small businesses, founders, and service providers."
     >
-    <title>Whimiscial Web Designs</title>
+    <meta name="keywords" content="small business web design, responsive websites, website refresh, web development, Florida web design">
+    <meta name="author" content="Whimiscial Web Designs">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Whimiscial Web Designs">
+    <meta
+      property="og:description"
+      content="Polished, responsive websites for small businesses with clear messaging and launch support."
+    >
+    <meta property="og:image" content="assets/hero-web-design.png">
+    <meta property="og:url" content="https://tarek326.github.io/whimiscial-web-designs/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Whimiscial Web Designs">
+    <meta
+      name="twitter:description"
+      content="Responsive small-business websites designed with clarity, polish, and launch support."
+    >
+    <meta name="twitter:image" content="assets/hero-web-design.png">
+    <title>Whimiscial Web Designs | Small Business Websites</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <meta name="theme-color" content="#13253b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +34,19 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Whimiscial Web Designs",
+        "url": "https://tarek326.github.io/whimiscial-web-designs/",
+        "telephone": "+1-727-953-0942",
+        "email": "tarekjacobs1@gmail.com",
+        "description": "Responsive website design and development for small businesses.",
+        "areaServed": "United States",
+        "serviceType": "Website design and development"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -44,6 +74,7 @@
 
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
         <a href="#process">Process</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
@@ -104,6 +135,45 @@
             <span class="card-icon">03</span>
             <h3>Refreshes & Care</h3>
             <p>Updates for older websites, content cleanup, mobile improvements, and ongoing maintenance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="packages" class="section packages-section">
+        <div class="section-heading">
+          <p class="eyebrow">Packages</p>
+          <h2>Clear starting points for different stages of business.</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <p class="package-label">Starter</p>
+            <h3>Landing Page</h3>
+            <p class="package-price">From $499</p>
+            <ul class="package-list">
+              <li>One polished responsive page</li>
+              <li>Hero, services, trust, and contact sections</li>
+              <li>Basic SEO and launch support</li>
+            </ul>
+          </article>
+          <article class="package-card featured-package">
+            <p class="package-label">Popular</p>
+            <h3>Business Website</h3>
+            <p class="package-price">From $999</p>
+            <ul class="package-list">
+              <li>Up to five core pages</li>
+              <li>Custom design direction and responsive build</li>
+              <li>Contact flow, SEO setup, and deployment help</li>
+            </ul>
+          </article>
+          <article class="package-card">
+            <p class="package-label">Care</p>
+            <h3>Refresh & Updates</h3>
+            <p class="package-price">From $199</p>
+            <ul class="package-list">
+              <li>Content, layout, and mobile improvements</li>
+              <li>Bug fixes and performance cleanup</li>
+              <li>Optional monthly care plan</li>
+            </ul>
           </article>
         </div>
       </section>
@@ -204,6 +274,25 @@
         </div>
       </section>
 
+      <section class="trust-section" aria-label="Trust signals">
+        <div class="trust-item">
+          <strong>Fast first drafts</strong>
+          <span>Clear design direction without dragging the process out.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Mobile responsive</strong>
+          <span>Layouts checked across phones, tablets, laptops, and desktops.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Easy handoff</strong>
+          <span>GitHub-backed files and practical notes for future updates.</span>
+        </div>
+        <div class="trust-item">
+          <strong>Direct contact</strong>
+          <span>Call 727-953-0942 or email tarekjacobs1@gmail.com.</span>
+        </div>
+      </section>
+
       <section id="contact" class="contact-section">
         <div class="contact-card">
           <div class="contact-copy">
@@ -241,6 +330,7 @@
               <textarea name="message" rows="5" required></textarea>
             </label>
             <button class="button primary" type="submit">Prepare email</button>
+            <p class="form-note" id="form-note" aria-live="polite"></p>
           </form>
         </div>
       </section>
